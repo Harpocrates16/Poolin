@@ -36,7 +36,7 @@ public void actionPerformed(ActionEvent ae)
 try
 {
 Class.forName("com.mysql.jdbc.Driver");  
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/rset","root","1234");
+Connection con=DriverManager.getConnection("YOUR_MYSQL_CONNECTION_URL_HERE");
 Statement stm=con.createStatement();  
 ResultSet rs=stm.executeQuery("select * from user"); 
 while(rs.next())  
@@ -150,7 +150,7 @@ class frame extends JFrame implements ActionListener
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/rset","root","1234");
+			Connection con = DriverManager.getConnection("YOUR_MYSQL_CONNECTION_URL_HERE");
 			Statement stm1 = con.createStatement();
 			String qry2 ="select * from login where uname ='"+s8+"'";
 			ResultSet rs1 = stm1.executeQuery(qry2);
@@ -248,3 +248,4 @@ public static void main(String args[])
 reg r = new reg();
 }
 }
+//PLEASE ADD YOUR MYSQL CONNECTION URL IN PLACES WHERE "YOUR_MYSQL_CONNECTION_URL_HERE" IS GIVEN
