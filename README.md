@@ -1,5 +1,5 @@
 # Poolin
-Basic simulation of a carpooling app
+Basic simulation of a carpooling app.
 The program helps to simulate the working of a carpooling app. The user can choose to be the driver or a rider(passenger).
 The passenger gives the starting address, the destination and the number of people accompanying them.
 The driver provides the starting address, destination and the type of vehicle they drive;.
